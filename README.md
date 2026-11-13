@@ -46,5 +46,5 @@ Contributions are welcome! Please follow these steps:
 none
 
 ## Contact
-Your Name – Peter Nguyen – peter.ptai.nguyen@gmail.com
+Peter Nguyen – peter.ptai.nguyen@gmail.com
 Project Link: [https://github.com](https://github.com)
