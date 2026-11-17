@@ -92,7 +92,7 @@ h6 {
  * LINK STYLE
  *------------------------------------------*/
 a {
-    color              : #ff5722;
+    color              : #1E60D6;
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -111,7 +111,7 @@ a:active {
 a:hover,
 a:focus {
     text-decoration : none;
-    color           : #ff5722;
+    color           : #1E60D6;
     }
 
 p {
@@ -150,13 +150,13 @@ ul {
 
 /*btn-primary*/
 .btn-primary {
-    background-color : #ff5722;
+    background-color : #1E60D6;
     }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active:focus {
-    background : #de4718;
+    background : #1E60D6;
     }
 
 /*btn-default*/
@@ -236,18 +236,20 @@ button:focus,
  *-----------------------------*/
 
 .header {
-    padding    : 50px 0;
+    padding    : 0px 0;
     margin     : 0;
     position   : relative;
-    border-top : 5px solid #ff5722;
+    border-top : 0px solid #1E60D6;
     }
 
 .header .profile-img {
     margin-right : 30px;
+    padding-top    : 30px ;
     }
 
 .header .name-wrapper {
     margin-bottom : 30px;
+    padding-top: 30px;
     }
 
 .header .name-wrapper h1 {
@@ -258,7 +260,7 @@ button:focus,
 
 .header .name-wrapper span {
     font-size : 24px;
-    color     : #ff5722;
+    color     : #1E60D6;
     }
 
 .header .personal-details {
@@ -279,6 +281,37 @@ button:focus,
 .header .personal-details span {
     color : #989898;
     }
+
+.header .navbar{
+    background-color: #1E60D6;
+    color: #bbbbbb;
+    padding: 25px;
+}
+
+.header .navbar{
+    a {
+    color: white;
+    text-decoration    : none;
+    -webkit-transition : all 0.3s ease 0s;
+    -moz-transition    : all 0.3s ease 0s;
+    -o-transition      : all 0.3s ease 0s;
+    transition         : all 0.3s ease 0s;
+    }
+
+    a,
+    a:active,
+    a:focus,
+    a:active {
+        text-decoration : none;
+        outline         : none
+        }
+
+    a:hover,
+    a:focus {
+        text-decoration : none;
+        color           : black;
+        }
+}
 
 @media (max-width : 768px) {
     .header {
