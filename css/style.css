@@ -88,6 +88,24 @@ h6 {
     line-height : 1.5em;
     }
 
+/*wrapping text*/
+.wrap-left {
+      float: left;
+      margin: 0 15px 15px 0; /* Adds space on the right and bottom */
+      max-width: 250px;
+    }
+
+.wrap-right {
+      float: right;
+      margin: 0 15px 15px 0; /* Adds space on the right and bottom */
+      max-width: 250px;
+    }
+
+    /* Prevents the parent container from collapsing around the floated image */
+.clearfix {
+      display: flow-root;
+    }
+
 /* --------------------------------------
  * LINK STYLE
  *------------------------------------------*/
