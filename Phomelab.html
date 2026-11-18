@@ -76,33 +76,80 @@
     <!--homelabblog-->
     <div class="container">
         <!--title of blog-->
-        <h1 style="text-align: center; padding: 50px;">
+        <h1 style="text-align: center; padding-top: 25px;">
             Personal Homelab
         </h1>
+        <p style="text-align: center; padding-bottom: 25px;">
+            A homelab using a Raspberry Pi 5 to create a personal network for learning and testing.
+        </p>
 
-        <!--main blog-->
+        <!--first row with motivation-->
         <div class="row">
             <div class="col-md-12" style="padding-bottom: 50px;">
                 <div class="col-md-4">
                     <img src="img/portfolio-1.jpg" height="250px">
                 </div>
-                <div class="col-md-8">
-                    <p>wassup</p>
+                <div class="col-md-8" style="height: 250px; padding: 50px;">
+                    <h2 style="text-align: center;">
+                        Motivation
+                    </h2>
+                    <p>
+                        I created this project with education and hands on experience in mind. The idea of a homelab was always fascinating to me, so I wanted to take a shot at it myself. My goal was to create my own personal network to better understand networking and to replace online subscriptions with my own services.
+                    </p>
                 </div>
             </div>
         </div>
 
+        <!--second row with hardware and software -->
         <div class="row">
             <div class="col-md-12" style="padding-bottom: 50px;">
-                <div class="col-md-8" style="text-align: right;">
-                    <p>interesting  </p>
+                <div class="col-md-6" style="text-align: center; padding: 20px;">
+                    <h2 style="text-align: center;">
+                        Hardware
+                    </h2>
+                    <ul>
+                        <li>Raspberry Pi 4gb</li>
+                        <li>X1001 Geekworm PCIe to M.2 NVMe Shield</li>
+                        <li>inland 500gb NVMe SSD</li>
+                        <li>CAT6 RJ45 ethernet cables</li>
+                        <li>1TB 2.5 SATA Hard Drive</li>
+                        <li>5 port tp-link network switch</li>
+                    </ul>
                 </div>
-                <div class="col-md-4">
-                    <img src="img/portfolio-1.jpg" height="250px">
+                <div class="col-md-6" style="text-align: center; padding: 20px;">
+                    <h2 style="text-align: center;">
+                        Software
+                    </h2>
+                    <ul>
+                        <li>Raspberry Pi imager</li>
+                        <li>Samba</li>
+                        <li>Docker</li>
+                        <li>Plex</li>
+                    </ul>
                 </div>
             </div>
         </div>
 
+        <!--third row with process-->
+                <div class="row">
+            <div class="col-md-12" style="padding-bottom: 50px;">
+
+                    <h2 style="text-align: center;">
+                        Implementation
+                    </h2>
+                    <p> 
+                        The first thing that I had to do was assemble the hardware. 
+                        I took the active cooler and M.2 hat and screwed them onto the Raspberry Pi.
+                        These two components are used to either cool the Pi or allow an NVMe M.2 SDD to be slotted internally to the Pi.
+                        Afterward, the next step was to format the drives and install the Operating System for the Pi. I used some insignia converters to plug the inland M.2 SDD and SATA hard drive into my comptuer. 
+                        Once plugged in, I formatted the drives in ext4 so they could be easier to use for services like plex. 
+                        The inland NVMe M.2 drive would serve as my main drive and the hard drive would be used as external storage. 
+                        After the drives were formatted, I proceeded to install the OS using the Raspberry Pi Imager onto the SSD and put it into the hat.
+                        I booted it up and configured it to allow Secure Socket and Remote Desktop Proctol between it and my computer.
+                    </p>
+                
+            </div>
+        </div>
     </div>
 
 
