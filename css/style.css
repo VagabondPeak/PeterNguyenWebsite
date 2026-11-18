@@ -88,6 +88,14 @@ h6 {
     line-height : 1.5em;
     }
 
+/*makes center*/
+.center {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    min-height: 100vh;
+  }
+
 /*wrapping text*/
 .wrap-left {
       float: left;
