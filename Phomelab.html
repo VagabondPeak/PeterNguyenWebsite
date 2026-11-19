@@ -65,7 +65,7 @@
                         <li><a href="index.html#projects">My Projects</a></li>
                     </div>
                     <div class="col-md-1">
-                        <li><a href="TiffanyAuthentication.html">Tiffany</a></li>
+                        <li><a href="TiffanyAuthentication.html">Tiff</a></li>
                     </div>
                 </div>
             </div>
@@ -86,8 +86,9 @@
         
 
         <!--first row with motivation-->
-        <div class="row">
-            <div class="col-md-12">
+        
+        <div class="col-md-12">
+            <div class="row">
                 <div class="col-md-3">
                     <img src="img/portfolio-1.jpg" class="wrap-left">
                 </div>
@@ -135,40 +136,42 @@
         </div>
 
         <!--third row with process-->
-        <div class="row">
-            <div class="clearfix" style="padding-bottom: 50px;">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="clearfix" style="padding-bottom: 50px;">
+                        
+                        <h2 style="text-align: center;">
+                            Implementation
+                        </h2>
+                        <img src="img/img2.jpeg" class="wrap-right" >
+                        <p> 
+                            The first thing that I had to do was assemble the hardware. 
+                            I took the active cooler and M.2 hat and screwed them onto the Raspberry Pi.
+                            These two components are used to either cool the Pi or allow an NVMe M.2 SSD to be slotted internally to the Pi.
+                            Afterward, the next step was to format the drives and install the Operating System for the Pi. I used some insignia converters to plug the inland M.2 SDD and SATA hard drive into my comptuer. 
+                            Once plugged in, I formatted the drives in ext4 so they could be easier to use for services like plex. 
+                            The inland NVMe M.2 drive would serve as my main drive and the hard drive would be used as external storage. 
+                            After the drives were formatted, I proceeded to install the OS using the Raspberry Pi Imager onto the SSD and put it into the hat.
+                            I booted it up and configured it to set up Secure Socket and Remote Desktop Procotol between the Pi and my computer. 
+                            Then I installed some software tools such as Samba and Docker. 
+                            I used docker to set up a plex container that would run from domain http://pi-ip-address:specified-port/web/index.html#!/. 
+                            This would allow me to host my own media library and stream from my homeLab. 
+                            The Samba software was used to set up a NAS or network access storage. 
+                            I edited the smb.conf file to create a file share to my external drive, which was hosted on the Pi.
+                            This enabled me to download and upload to the storage from any device using any operating system. 
+                            For example, I could use the Raspberry Pi(linux distribution) to upload file to the storage and retrieve it from the same storage as my windows computer.
+                        </p>
+
+
                     
-                    <h2 style="text-align: center;">
-                        Implementation
-                    </h2>
-                    <img src="img/img2.jpeg" class="wrap-right" >
-                    <p> 
-                        The first thing that I had to do was assemble the hardware. 
-                        I took the active cooler and M.2 hat and screwed them onto the Raspberry Pi.
-                        These two components are used to either cool the Pi or allow an NVMe M.2 SSD to be slotted internally to the Pi.
-                        Afterward, the next step was to format the drives and install the Operating System for the Pi. I used some insignia converters to plug the inland M.2 SDD and SATA hard drive into my comptuer. 
-                        Once plugged in, I formatted the drives in ext4 so they could be easier to use for services like plex. 
-                        The inland NVMe M.2 drive would serve as my main drive and the hard drive would be used as external storage. 
-                        After the drives were formatted, I proceeded to install the OS using the Raspberry Pi Imager onto the SSD and put it into the hat.
-                        I booted it up and configured it to set up Secure Socket and Remote Desktop Procotol between the Pi and my computer. 
-                        Then I installed some software tools such as Samba and Docker. 
-                        I used docker to set up a plex container that would run from domain http://pi-ip-address:specified-port/web/index.html#!/. 
-                        This would allow me to host my own media library and stream from my homeLab. 
-                        The Samba software was used to set up a NAS or network access storage. 
-                        I edited the smb.conf file to create a file share to my external drive, which was hosted on the Pi.
-                        This enabled me to download and upload to the storage from any device using any operating system. 
-                        For example, I could use the Raspberry Pi(linux distribution) to upload file to the storage and retrieve it from the same storage as my windows computer.
-                    </p>
-
-
-                
+                </div>
             </div>
         </div>
 
         <!--images-->
         <div class="col-md-12">
                 <div class="row">
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-4">
                         <a class="portfolio-item" href="img/plexPortainer.png">
                             <div class="portfolio-thumb">
                                 <img src="img/plexPortainer.png" alt="" >
@@ -182,21 +185,21 @@
                         </a>
                         <!-- .portfolio-item -->
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-4">
                         <a class="portfolio-item" href="img/smbConf.png">
                             <div class="portfolio-thumb">
                                 <img src="img/smbConf.png" alt="">
                             </div>
 
                             <div class="portfolio-info">
-                                <h3>Using Samba</h3>
+                                <h3>editing Samba file</h3>
                                 <small>sudo nano /etc/samba/smb.conf</small>
                             </div>
                             <!-- portfolio-info -->
                         </a>
                         <!-- .portfolio-item -->
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-4">
                         <a class="portfolio-item" href="img/share.jpeg">
                             <div class="portfolio-thumb" style="height: 198px;">
                                 <img src="img/share.jpeg" alt="">
