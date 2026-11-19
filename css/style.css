@@ -105,7 +105,7 @@ h6 {
 
 .wrap-right {
       float: right;
-      margin: 0px 0px 25px 25px; /* Adds space on the right and bottom */
+      margin: 0px 0px 15px 15px; /* Adds space on the right and bottom */
       max-width: 250px;
     }
 
